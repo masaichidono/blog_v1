@@ -1,0 +1,121 @@
+body{
+	background: none;
+}
+html{
+	font-size: 25px;
+}
+#canvas{
+	width:100%;height:auto;/*默认全屏显示 可自己设置高度640px*/;
+	display:inline-block;vertical-align:baseline
+	position:absolute;
+	z-index:-1;
+}
+#blog{
+	position: relative;
+}
+.blog_content{
+	height: 21.2rem;
+	position: absolute;
+	z-index: 20;
+	width: 80%;
+	left: 7%;
+	margin: 1.2rem auto 0px auto;
+	background: url(../img/枝干.png) 35.8% 2.4rem no-repeat;	
+}
+.blog_content_bg{
+	display: none;
+}
+.title{
+	position: relative;
+	font-weight: bold;
+}
+.title_content{
+	position: relative;
+	width: 6%;
+	left: 33%;
+	color: white;
+}
+.title_content>span{
+	font-size: 1.2rem;
+	color: greenyellow;
+}
+.title_content>p{
+	text-align: center;
+}
+.mood_content>ul>li{
+	color: white;
+	height: 4.4rem;
+	position: relative;
+	font-weight: bold;
+	/*background: url(../img/枝干.png) 60PX 60px no-repeat;*/	
+}
+/*时间div*/
+.mood_content_first{
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	text-align: right;
+	line-height: 3.6rem;
+}
+.mood_content_first>span{
+	font-size: 1rem;
+	margin-left: 0.5rem;
+}
+/*圆点*/
+.mood_content_second{
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	left: 30%;
+	background: url(../img/白条.png) 0.8em 2rem no-repeat;
+}
+.mood_content_second>b{
+	width: 0.72rem;
+	height: 0.72rem;
+	border-radius: 0.8rem;
+	border: 2px solid #6BC30D;
+	display: block;
+	margin-left: 50%;
+	margin-top: 30%;
+	background-color: white;
+}
+/*所说历史记录*/
+.mood_content_third{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 40%;
+	line-height: 1.8rem;
+}
+.blog_footer{
+	/*position: absolute;
+	z-index: 20;
+	top: 29.6rem;*/
+	display: none;
+}
+.mood_content>ul>li:hover .mood_content>ul>li>.mood_content>b{
+	background-color: greenyellow
+}
+.blog_footer_content ul{
+	width: 30%;
+	margin-left: 10%;
+}
+@media only screen and (min-width: 440px) and (max-width: 780px) {
+	html{
+		font-size: 20px;
+	}
+	.blog_content{
+		font-size: 0.8rem;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+	html{
+		font-size: 15px;
+	}
+	.blog_content{
+		font-size: 0.6rem;
+	}
+	#music{
+		right: -1rem;
+	}
+}

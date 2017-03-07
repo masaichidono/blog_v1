@@ -1,0 +1,215 @@
+*{padding: 0px;margin: 0px;}
+ul,ol{list-style-type: none;}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: #4A4949;
+}
+.clearFixed:before,.clearFixed:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+body{
+	background: url(../img/bg.jpg) 0px 0px repeat;
+	background-size: 100%;
+}
+/*头部*/
+.blog_header{
+	width: 100%;
+	height: 2.3rem;
+	background-color: #2d2d2d;
+}
+.fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 101;
+}
+/*头部博客logo*/
+.blog_logo{
+	width: 100%;	
+	
+}
+.blog_logo h1{
+	text-align: center;
+	height: 80%;
+	font-size: 2.3rem;
+	margin-top: 1rem;
+	color: white;
+}
+
+/*头部菜单导航*/
+.blog_header_menu{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+.blog_header_menu ul{
+	height: 100%;
+}
+.blog_header_menu ul li{
+	float: left;
+	width: 16%;
+	height: 100%;
+}
+.blog_header_menu ul li a{
+	display: block;
+	height: 100%;
+	color: white;
+	text-align: center;
+	line-height: 2.3rem;
+	font-size: 0.8rem;
+}
+.active{
+	background-color: #4a4949;
+}
+.blog_header_menu ul li a:hover{
+	background-color: #4a4949;
+}
+/*菜单下的图片*/
+.blog_photo img{
+	width: 100%;
+}
+#music{
+	width: 1.5rem;
+	height: 1.5rem;
+	display: block;
+	background: url(../img/music_play.png) 0px 0px no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: -2.7rem;
+	top: 0.5rem;
+}
+
+/*播放按钮控制*/
+#audio{
+	position: absolute;
+	right: -2.1rem;
+	top: 1.8rem;
+	display: none;
+}
+
+/*内容*/
+/*右侧最新推荐*/
+/*热点排行*/
+.blog_content_rank{
+	width: 30%;
+	float: right;
+	margin-left: 0.5rem;
+	margin-right: 1rem;
+	margin-top: 2rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	background-color: white;
+}
+.blog_content_rank h4{
+	width: 100%;
+	padding: 0.3rem 0px;
+	border-left: 0.2rem solid skyblue;
+	text-indent: 0.5rem;
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+}
+.blog_content_rank ul{
+	overflow: hidden;
+}
+.blog_content_rank ul li{
+	width: 100%;
+	height: 1.5rem;
+	border-bottom: 0.1rem dashed #bcbcbc;
+}
+/*.blog_content_rank ul li:last-child{
+	border: none;
+}*/
+.blog_content_rank ul li a{
+	display: block;
+	height: 100%;
+	width: 90%;
+	overflow: hidden;
+	line-height: 1.5rem;
+	float: left;
+	margin-left: 0.2rem;
+	font-size: 0.6rem;
+}
+.blog_content_rank ul li span{
+	width: 0.8rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	margin-top: 0.3rem;
+	display: inline-block;
+	color: white;
+	background-color:  #BCBCBC;
+	float: left;
+	text-align: center;
+	border-radius: 0.2rem;
+	font-weight: bold;
+}
+.blog_content_rank ul li:first-child span{
+	background-color: red;
+}
+.blog_content_rank ul li:nth-child(2) span{
+	background-color: greenyellow;
+}
+.blog_content_rank ul li:nth-child(3) span{
+	background-color: blue;
+}
+
+
+/*底部*/
+.blog_footer{
+	width: 100%;
+	height: 2.5rem;
+	background-color: #414141;
+	margin-top: 1rem;
+}
+.blog_footer_content{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.blog_footer_content ul{
+	width: 20%;
+	height: 100%;
+	float: left;
+	margin-left: 22%;
+}
+.blog_footer_content ul li{
+	float: left;
+	width: 23%;
+	font-size: 0.8rem;
+	margin-top: 0.7rem;
+	border-right: 0.1rem solid white;
+}
+.blog_footer_content ul li a{
+	color: #aaaaaa;
+	display: block;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+}
+.blog_footer_content p{
+	float: left;
+	font-size: 0.7rem;
+	margin-top: 0.7rem;
+	
+}
+/*返回顶部和播放音乐按钮*/
+#back{
+	width: 3rem;
+	height: 3rem;
+	display: block;
+	background:url(../img/back.png) 0px 0px no-repeat;
+	background-size: 100%;
+	position: fixed;
+	z-index: 10002;
+	bottom: 10%;
+	right: 4%;
+	display: none;
+}

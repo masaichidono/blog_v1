@@ -1,0 +1,259 @@
+html{
+	font-size: 25px;
+}
+/*励志图片*/
+.blog_photo{
+	width: 100%;
+	margin-top: 0.5rem;
+	margin-bottom: 1remj;
+	position: relative;
+	z-index: -1;
+}
+.blog_photo img{
+	width: 100%;
+}
+.blog_photo>h6{
+	position: absolute;
+	left: 28%;
+	top: 3rem;
+	color: white;
+	font-size: 1rem;
+}
+.blog_photo>h5{
+	position: absolute;
+	left: 15%;
+	top: 5rem;
+	font-size: 1rem;
+	color: white;
+}
+/*内容*/
+.blog_content{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+	margin-top: 1.2rem;
+}
+.blog_content_bg{
+	position: absolute;
+	left: 9%;
+	background-color: white;
+	width: 82%;
+	height: 45rem;
+	opacity: 0.4;
+	z-index: 10;
+}
+/*最新文章*/
+.blog_latest{
+	width: 63%;
+	float: left;
+	font-size: 0.6rem;
+}
+/*分类导航*/
+.blog_latest h3{
+	padding: 0.5rem 0px;
+	margin-bottom: 0.5rem;
+	border-left: 0.2rem solid deepskyblue;
+	text-indent: 0.2rem;
+	background-color: white;
+}
+/*最新文章中的每一项*/
+.blog_latest_circle{
+	width: 97%;
+	height: 7.2rem;
+	overflow: hidden;
+	padding: 0.5rem;
+	border: 0.5px solid #4A4949;
+	border-radius: 0.2rem;
+	margin-bottom: 1rem;
+	background-color: white;
+}
+
+.blog_latest_circle_photo{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+.blog_latest_circle_photo img{
+	width: 100%;
+}
+.blog_latest_circle_info{
+	width: 65%;
+	height: 100%;
+	float: left;
+	margin-left: 0.7rem;
+}
+.blog_latest_circle_info li{
+	float: left;
+	margin-right: 0.5rem;
+}
+.blog_latest_circle_info h2{
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
+}
+.blog_latest_circle_info ul{
+	margin: 1rem 0px 1rem 0px;
+}
+/*左边内容分页*/
+.blog_content_page{
+	width: 100%;
+	height: 1.5rem;
+	background-color: white;
+	border-radius: 0.2rem;
+}
+.blog_content_page ul{
+	width: 83%;
+	margin: 0 auto;
+}
+.blog_content_page ul li{
+	float: left;
+	margin-top: 0.5rem;
+	margin-right: 0.5rem;
+}
+.blog_content_page ul li a{
+	display: block;
+	width: 3rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	background-color: #eeeeee;
+}
+.blog_content_page ul li:nth-child(7) a:hover{
+	background-color: #eeeeee;
+}
+.blog_content_page ul li a:hover{
+	background-color: #049ff1;
+}
+
+/*加载更多*/
+.blog_content_page h5{
+	width: 100%;
+	height: 100%;
+	line-height: 1.5rem;
+	text-align: center;
+	color: deepskyblue;
+	font-size: 0.7rem;
+	
+}
+/*内容右边*/
+.blog_content_blackboard{
+	width: 35%;
+	float: right;
+	text-align: center;
+	position: relative;
+	margin-left: 0.5rem;
+}
+.blog_content_blackboard img{
+	width: 100%;
+}
+
+.blog_content_blackboard p{
+	width: 91%;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	color: white;
+	font-size: 0.9rem;
+}
+/*响应式*/
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	html{
+		font-size: 13px;
+	}
+	.blog_content{
+		width: 95%;
+	}
+	.blog_content_blackboard{
+		width: 100%;
+		float: left;
+		margin-left: 0;
+	}
+	.blog_content_blackboard p{
+		font-size: 1.2rem;
+	}
+	/*背景*/
+	.blog_content_bg{
+		width: 100%;
+		left: 0;
+	}
+	/*最新文章*/
+	.blog_latest{
+		width: 100%;
+		float: left;
+	}
+	.blog_latest_circle_info ul{
+		margin: 0.4rem 0 0.4rem 0;
+	}
+	/*排行版*/
+	.blog_content_rank{
+		width: 98%;
+		margin-right: -0.4rem;
+	}
+	#back{
+		right: 1%;
+	}
+	.blog_footer_content ul{
+		width: 33%;
+		margin-left: 4%;
+	}
+	.blog_latest_circle{
+		height: 8.2rem;
+	}
+}
+@media only screen and (min-width: 640px) and (max-width: 830px) {
+	html{
+		font-size: 13px;
+	}
+	.blog_content_blackboard{
+		width: 100%;
+		float: left;
+		margin-left: 0;
+	}
+	.blog_content_blackboard p{
+		font-size: 2rem;
+	}
+	/*背景*/
+	.blog_content_bg{
+		width: 84%;
+	}
+	/*最新文章*/
+	.blog_latest{
+		width: 100%;
+		float: left;
+		padding-left: 0.5rem;
+	}
+	.blog_latest_circle_info ul{
+		margin: 0.4rem 0 0.4rem 0;
+	}
+	/*排行版*/
+	.blog_content_rank{
+		width: 97%;
+		margin-right: -0.4rem;
+	}
+	#back{
+		right: 1%;
+	}
+	.blog_footer_content ul{
+		width: 33%;
+		margin-left: 4%;
+	}
+	.blog_latest_circle_photo{
+		width: 22%;
+	}
+	.blog_content_page{
+		height: 1.8rem;
+		
+	}
+	.blog_content_page h5{
+		line-height: 1.8rem;
+	}
+}
+@media only screen and (min-width: 830px) and (max-width: 1400px) {
+	html{
+		font-size: 25px;
+	}
+	.blog_content_rank{
+		width: 32%;
+		margin-right: 0.2rem;
+	}
+}

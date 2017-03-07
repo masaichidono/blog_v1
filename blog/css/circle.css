@@ -1,0 +1,280 @@
+html{
+	font-size: 20px;
+}
+/*内容*/
+.blog_content{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+	margin-top: 1rem;
+}
+.blog_content_bg{
+	position: absolute;
+	left: 4%;
+	background-color: white;
+	width: 93%;
+	height: 36rem;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+/*左侧内容*/
+.blog_circle_left{
+	width: 100%;
+	background-color: white;
+	border-radius: 0.2rem;
+	float: left;
+}
+.blog_circle_left h1{
+	text-align: center;
+	color: blue;
+	padding: 0.4rem;
+	margin-top: 2rem;
+}
+.blog_circle_left>ul{
+	/*width: 80%;*/
+	height: 1.2rem;
+	line-height: 1.2rem;
+	margin: 0 auto;
+	margin-bottom: 0.8rem;
+	text-align: center;
+	border-top: 1px dashed deepskyblue;
+	border-bottom: 1px dashed deepskyblue;
+}
+.blog_circle_left>ul li{
+	float: left;
+	width: 30%;
+	margin-left: 2%;
+	font-size: 0.8rem;
+	color:  #AA5500;
+}
+.blog_circle_left>ul li:nth-child(2) span{
+	color: red;
+}
+/*文章内容*/
+#blog_circle_content{
+	width: 94%;
+	padding: 0px 0.8rem;
+}
+/*上下文章*/
+.blog_circle_left>h2{
+	font-size: 0.6rem;
+	margin: 0.4rem 0px;
+	width: 94%;
+	padding: 0px 0.8rem;
+}
+.blog_circle_left>h2 #before{
+	float: left;
+}
+.blog_circle_left>h2 #after{
+	float: right;
+}
+
+/*右侧最新推荐*/
+.blog_content_rank{
+	width: 30%;
+	margin-left: 0.4rem;
+	margin-right: 0px;
+	margin-top: 0px;
+	display: none;
+}
+.circle_rank{
+	position: fixed;
+	/*padding: 0;*/
+}
+
+.circle_comment{
+	width: 95%;
+	padding: 0px 0.8rem;
+	
+}
+.circle_comment>h4{
+	padding: 0.4rem 0px;
+	margin: 0.4rem;
+	border-bottom: 1px solid #ccc;
+}
+.circle_comment_send>a{
+	width: 8%;
+	float: left;
+}
+.circle_comment_send>div{
+	width: 90%;
+	float: left;
+	position: relative;
+}
+.circle_comment_send>div>textarea{
+	width: 97%;
+	font-size: 0.6rem;
+	padding: 0.4rem;
+	resize: none;
+	background-color: #fdfdfd;
+	border-color: #cccccc;
+	border-radius: 0.2rem;
+}
+.circle_comment_send>div>div{
+	width: 97%;
+	padding-left: 0.8rem;
+	position: absolute;
+	top: 2.4rem;
+	left: 0px;
+	border-radius: 0.2rem;
+	background-color: #fcfcfc;
+	border: 1px solid #ccc;
+}
+.circle_comment_send>div>div>a{
+	width: 15%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	display: block;
+	float: right;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	background-color: #e7e7e7;
+}
+/*评论面板*/
+.circle_comment_menu{
+	width: 100%;
+	/*padding-right: 20px;*/
+	padding: 0.4rem 0px;
+	
+}
+.circle_comment_menu>a{
+	width: 15%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	display: block;
+	float: left;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+}
+.circle_comment_menu>a>span{
+	color: red;
+}
+.circle_comment_menu>ul{
+	width: 40%;
+	margin-right: 0.8rem;
+	float: right;
+}
+.circle_comment_menu>ul li{
+	float: right;
+	width: 20%;
+	line-height: 1.2rem;
+	text-align: right;
+}
+
+.circle_comment_menu>ul li a{
+	width: 32%;
+	font-size: 0.6rem;
+}
+/*评论列表*/
+.circle_comment_list{
+	
+}
+.circle_comment_list>ul>li{
+	padding: 0.4rem 0px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.circle_comment_list>ul>li>a{
+	width: 7%;
+	padding: 0.1rem;
+	float: left;
+}
+.circle_comment_list>ul>li>div{
+	float: left;
+	width: 80%;
+	margin-left: 0.4rem;
+}
+.circle_comment_list>ul>li>div>p{
+	padding: 0.4rem 0px;
+}
+.circle_comment_list>ul>li>div>a{
+	color: red;
+}
+.circle_comment_list>ul>li>div>ul>li{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+/*评论分页*/
+.circle_comment_page{
+	padding: 0.4rem 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1.2rem;
+}
+.circle_comment_page>ul{
+	
+}
+.circle_comment_page>ul>li{
+	float: right;
+	width: 10%;
+	text-align: center;
+}
+.circle_comment_page>ul>li a{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+	display: block;
+	
+}
+/*登陆面板*/
+.circle_login{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	opacity: 0.8;
+	display: none;
+}
+.circle_login_panel{
+	width: 16rem;
+	height: 12rem;
+	position: fixed;
+	z-index: 1001;
+	top: 50%;
+	left: 50%;
+	margin-top: -8rem;
+	margin-left: -6rem;
+	background-color: white;
+	border: 1px solid deepskyblue;
+	padding: 0.4rem;
+	display: none;
+}
+.circle_login_panel>form{
+	width: 80%;
+	margin: 0 auto;
+}
+.circle_login_panel table{
+	width: 100%;
+}
+.circle_login_panel input{
+	width: 80%;
+	height: 1.2rem;
+	margin-bottom: 25px;
+}
+.circle_login_panel table button{
+width: 16%;
+height: 1.2rem;
+}
+.circle_login_panel textarea{
+	width: 100%;
+}
+.circle_login_panel p{
+	margin-bottom: 0.2rem;
+}
+.circle_login_panel tr:nth-child(2){
+	display: none;
+}
+#submit{
+	width: 30%;
+	float: right;
+	display: none;
+}
